@@ -5,7 +5,7 @@ go 1.20
 require google.golang.org/grpc v1.64.0
 
 require (
-	github.com/GRPCPractice/proto v0.1.0 // indirect
+	github.com/GRPCPractice/proto v0.1.1-0.20240610122941-f4404b7062e3 // indirect
 	golang.org/x/net v0.22.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect

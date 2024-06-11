@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/GRPCPractice/proto/proto/helloworld"
+	"github.com/GRPCPractice/proto/proto/user"
 	"google.golang.org/grpc"
 )
 
@@ -26,4 +27,11 @@ func main() {
 	StreamHelloRequests(c)
 	StreamHelloReplies(c)
 	SayHelloChat(c)
+
+	u := user.NewUserServiceClient(conn)
+	CreateUser(u)
+	GetUser(u)
+	UpdateUser(u)
+	DeleteUser(u)
+	ListUsers(u)
 }
