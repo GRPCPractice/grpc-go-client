@@ -13,3 +13,4 @@ go get github.com/GRPCPractice/proto@v0.2.0
 ## 기능
 1. **helloWorld**: gRPC 기본 예제
 2. **user**: 사용자 CRUD
+3. **chat**: 채팅

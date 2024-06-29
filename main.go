@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/GRPCPractice/proto/proto/chat"
 	"github.com/GRPCPractice/proto/proto/helloworld"
 	"github.com/GRPCPractice/proto/proto/user"
 	"google.golang.org/grpc"
@@ -34,4 +35,8 @@ func main() {
 	UpdateUser(u)
 	DeleteUser(u)
 	ListUsers(u)
+
+	ch := chat.NewChatServiceClient(conn)
+	Connect(ch)
+	Send(ch)
 }
